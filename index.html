@@ -1,27 +1,41 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<metal Charset="UTF-8">
-<link rel="stylesheet" href="style.css">
+    <title>iTunes - Search</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-cyborg.css">
+</head>
 <body>
 
-
+<div row>
+<div id="form" class="col-sm-12">
 <div class="container">
-  <h1> itunes Music </h1>
-  <input type="text" id="searchTerm">
-  <button id ="search" class = "btn btn-primary"> Search </button>
+<div class="jumbotron">
+    <center>
+    <h1>Magic Of Music</h1>
+    <br>
+    <p>Search for your favorite musics</p>
+    </center>
+
+    <div class="input-group">
+    <input type="text" id="searchBox" class="form-control" placeholder="Enter song title or artist">
+    <span class="input-group-btn">
+	<button type="button" id="startSearch" class="btn btn-default">Search</button>
+    </span>
+    </div>
+</div>      
+</div>
+</div>
+</div>
+<div row>
+<div class="col-sm-12">
+<img class="musicImage" src = "" >
 </div>
 
 
 
 
+ <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="itunes.js"></script>
 
-
-<script src ="https://code.jquery.com/jquery-3.1.1.js" >
-<script src ="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="itunes.js"> </script>
-<script src="app.js"> </script>
-
-
-  </body>
+</body>
 </html>
