@@ -4983,6 +4983,8 @@ a.badge:focus {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
+  background-image: url(cover.jpg);
+
 }
 .jumbotron .container {
   max-width: 100%;
