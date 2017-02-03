@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>iTunes - Search</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap-cyborg.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-cyborg.css">
+<link rel="stylesheet" type="text/css" href="myStyleSheet.css">
 </head>
 <body>
 
@@ -11,7 +12,7 @@
 <div class="container">
 <div class="jumbotron">
     <center>
-    <h1>Magic Of Music</h1>
+    <h1 id = "flash"> Magic Of Music </h1>
     <br>
     <p>Search for your favorite musics</p>
     </center>
@@ -26,16 +27,21 @@
 </div>
 </div>
 </div>
-<div row>
-<div class="col-sm-12">
-<img class="musicImage" src = "" >
+<center>
+
+<div id ="displaySongResults"> </div>
+<div id ="nextPage">
+
 </div>
-
-
-
-
- <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+</center>
+<script>
+function flash() {
+    var text = document.getElementById('flash');
+    text.style.color = (text.style.color=='red') ? 'blue':'red';
+}
+var clr = setInterval(flash, 1)
+</script>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="itunes.js"></script>
-
 </body>
 </html>
